@@ -98,3 +98,5 @@ Does it work ?
 ... Ofcause !!
 
 btw. "mums" is Danish for "yum" ..
+
+This script is distributed on an "as is" basis, without warranties or conditions of any kind, either express or implied.
