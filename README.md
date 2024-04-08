@@ -60,4 +60,41 @@ Now you have /prj/mums on your IFS - You are good to go.
 
 ## Using ```mums```
 
+First lets take a look at what we can install. Enter the following at at the SSH command prompt:
+``` 
+/prj/mums/mums.sh list .
+```
+Note the ```.``` that means list everything.
+
+Also note - loads of these packages is already available by ```yum``` so - ofcause use the IBM supported version. It is "the other stuff" that is important:
+
+Let's try to install ```ìmagemagic```
+
+
+
+``` 
+/prj/mums/mums.sh list ImageMagick
+```
+
+Yep!! ```ImageMagick``` is there ( you are querying the FTP directory)
+
+Let's take a look of which version are available:
+
+```
+/prj/mums/mums.sh versions ImageMagick
+```
+
+This looks nice: ```ImageMagick-Q16-6.8.1.10-1.aix5.1.ppc.rpm``` 
+Now install that!!
+```
+/prj/mums/mums.sh install ImageMagick-Q16-6.8.1.10-1.aix5.1.ppc.rpm
+```
+
+Does it work ? 
+
+```
+/opt/freeware/bin/convert
+```
+... Ofcause !!
+
 btw. "mums" is Danish for "yum" ..

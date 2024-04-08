@@ -50,7 +50,7 @@ function versions   {
   #  echo $rec 
   #done < ".listing" 
   echo "Install by giving full RPM name to:"
-  echo "./freeware.sh install $1 [rpm name]"
+  echo "./mums.sh install $1 [rpm name]"
 
 }
 
@@ -132,3 +132,5 @@ case "$1" in
   help
   ;;
 esac
+
+rm index*
